@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.springframework.org/schema/beans"
+  xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd ">
+<!-- 单机版solr -->
+<!-- <bean id="httpSolrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
+		構造方法
+	<constructor-arg index="0" value="http://192.168.25.133:8080/solr/collection1"></constructor-arg>
+</bean> -->
+<!-- 集群版solr -->
+<bean id="cloudSolrServer" class="org.apache.solr.client.solrj.impl.CloudSolrServer">
+	<constructor-arg index="0" value="192.168.25.133:2181,192.168.25.133:2182,192.168.25.133:2183"></constructor-arg>
+	<!-- 设置默认collection属性 -->
+	<property name="defaultCollection" value="collection2"></property>
+</bean>
+</beans>

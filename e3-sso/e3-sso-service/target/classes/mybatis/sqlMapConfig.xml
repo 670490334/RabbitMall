@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置别名 -->
+	<typeAliases>
+		<!-- 配置包路径，在mapper.xml文件下com.rabbit.bean这个路径下的所有类都可以直接写类名 且首字母大小写都可以 -->
+		<package name="com.e3shop.pojo"/>
+	</typeAliases>
+	<plugins>
+			<!-- PageHelper拦截器 实现分页 -->
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+				<!-- 设置数据库类型 -->
+			<property name="dialect" value="mysql"/>
+		</plugin>
+
+		
+	</plugins>
+</configuration>
