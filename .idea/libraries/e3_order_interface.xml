@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="e3-order-interface">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/e3-order/e3-order-interface/target/e3-order-interface.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

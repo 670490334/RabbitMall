@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="e3-content-interface">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/e3-content/e3-content-interface/target/e3-content-interface.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

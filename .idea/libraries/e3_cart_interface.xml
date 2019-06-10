@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="e3-cart-interface">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/e3-cart/e3-cart-interface/target/e3-cart-interface.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

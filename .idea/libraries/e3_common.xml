@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="e3-common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/e3-common/target/e3-common.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
